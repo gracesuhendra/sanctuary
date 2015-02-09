@@ -23,11 +23,13 @@ body {
 
 /*give space for the logo from the top*/
 .move-lower {
-  padding-top: 15px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 .move-much-lower {
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 
@@ -190,4 +192,7 @@ hr {
   padding-left: 0px;
 }
 	
+.text-centered img {
+    margin-left: 70px;
+  }
 	
