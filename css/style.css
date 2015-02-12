@@ -29,7 +29,7 @@ body {
 }
 
 .move-much-lower {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 
@@ -44,7 +44,9 @@ body {
   font-weight: 300; /*thicker version of the google font*/
 }
 
-
+.put-color {
+  background-color: rgb(213, 240, 242);
+}
 /*make the line thicker*/
 hr {
   background-color: #75deec;
@@ -64,6 +66,7 @@ hr {
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
+  padding-left: 100px;
 }
 
 
@@ -195,4 +198,13 @@ hr {
 .text-centered img {
     margin-left: 70px;
   }
+
+.change-font {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+}
+
+.text-larger {
+  font-size: 30px;
+}
 	
