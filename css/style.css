@@ -29,7 +29,7 @@ body {
 }
 
 .move-much-lower {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 
@@ -44,9 +44,7 @@ body {
   font-weight: 300; /*thicker version of the google font*/
 }
 
-.put-color {
-  background-color: rgb(213, 240, 242);
-}
+
 /*make the line thicker*/
 hr {
   background-color: #75deec;
@@ -90,7 +88,7 @@ hr {
 }
 
 
-/* Main menu settings */
+
 #centeredmenu {
    clear:both;
    float:left;
@@ -123,7 +121,7 @@ hr {
 #centeredmenu ul li a {
    display:block;
    margin:0;
-   padding:.6em .5em .4em;
+   padding:1em 1em 1em;
    font-size:1em;
    text-decoration:none;
    color:#444;
@@ -133,20 +131,17 @@ hr {
 #centeredmenu ul li a:hover {
    background:#36f; /* Top menu items background colour */
    color:#fff;
-   border-bottom:1px solid #03f;
 }
 #centeredmenu ul li:hover a,
 #centeredmenu ul li.hover a { /* This line is required for IE 6 and below */
-   background:gray; /* Top menu items background colour */
+   background:#C5BBBB; /* Top menu items background colour */
    color:#fff;
-   border-bottom:1px solid #03f;
 }
 
 /* Submenu items */
 #centeredmenu ul ul {
    display:none; /* Sub menus are hiden by default */
    position:absolute;
-   top:2em;
    left:0;
    right:auto; /*resets the right:50% on the parent ul */
    width:10em; /* width of the drop-down menus */
@@ -163,15 +158,13 @@ hr {
 #centeredmenu ul li.hover ul li a { /* This line is required for IE 6 and below */
    font-size:.8em;
    font-weight:normal; /* resets the bold set for the top level menu items */
-   color:#444;
-   line-height:1.4em; /* overwrite line-height value from top menu */
-   border-bottom:1px solid #ddd; /* sub menu item horizontal lines */
+
 }
 #centeredmenu ul ul li a:hover,
 #centeredmenu ul li.active ul li a:hover,
 #centeredmenu ul li:hover ul li a:hover,
 #centeredmenu ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
-   background:#36f; /* Sub menu items background colour */
+   background:#AED9F2; /* Sub menu items background colour */
    color:#fff;
 }
 
@@ -186,7 +179,6 @@ hr {
 #centeredmenu ul li.hover ul { /* This line is required for IE 6 and below */
    display:block; /* Show the sub menus */
 }
-
 .space-below {
   padding-bottom: 50px;
 }
@@ -205,6 +197,15 @@ hr {
 }
 
 .text-larger {
-  font-size: 30px;
+  font-size: 25px;
 }
+
+.border {
+    border-style: dashed;
+    border-color: #3fa2da; 
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
 	
