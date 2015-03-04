@@ -90,8 +90,8 @@
             if (id > 0) {
                 getData();
             } else {
-                viewModel = new viewModel();
-                viewModel.petid = 0;
+                viewModel = new pet();
+                ko.applyBindings(viewModel);
             }
         })
 
@@ -140,13 +140,23 @@
         // JSON object for pet
         function pet(data) {
             var self = this;
-            self.petid = data.petid;
-            self.pettype = data.pettype;
-            self.petname = data.petname;
-            self.weight = data.weight;
-            self.breed = data.breed;
-            self.color = data.color;
-            self.notes = data.notes;
+            if (data != null) {
+                self.petid = data.petid;
+                self.pettype = data.pettype;
+                self.petname = data.petname;
+                self.weight = data.weight;
+                self.breed = data.breed;
+                self.color = data.color;
+                self.notes = data.notes;
+            } else {
+                self.petid = 0;
+                self.pettype = "";
+                self.petname = "new pet";
+                self.weight = 0.0;
+                self.breed = "";
+                self.color = "";
+                self.notes = "";
+            }
         }
 
         // send pet record to web service for insert or update
@@ -192,7 +202,7 @@
                     success: function (response) {
                         setMessage(response.message);
                         alert("Record was deleted");
-                        location.href = "PetListKO.html";
+                        location.href = "AnimalList.html";
                     },
                     error: function (result) { setMessage("delete failed: " + result); }
                 });
