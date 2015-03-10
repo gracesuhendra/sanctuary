@@ -96,19 +96,22 @@
         })
 
         // call MSI web service to pull single record based on id
-        function getData() {
+        function getData() 
+        {
             var url = MSIRootAPI + "pet/" + id;
-            var jqxhr = $.get(MSIRootAPI + "pet/" + id, "", function (response) {
+            var jqxhr = $.get(MSIRootAPI + "pet/" + id, "", function (response) 
+            {
                 getDataResponse(response);
             }, "json")
-            .fail(function (response) {
+            .fail(function (response) 
+            {
                 RequestFailed(response);
             }
-           );
-        }
+            )
+        };
 
         function RequestFailed(r) {
-            alert("AJAX data request failed");
+            alert("AJAX data request failed from within edit");
         }
 
         function viewModel(data) {
@@ -123,12 +126,18 @@
         }
 
         // populate HTML controls from single record
-        function getDataResponse(response) {
+        function getDataResponse(response) 
+        {
             clearMessage();
-            try {
+            try 
+            {
                 viewModel = new pet(response);
                 ko.applyBindings(viewModel);
-            } catch (e) { alert("get data error: " + e.message); }
+            } 
+            catch (e) 
+            { 
+                alert("get data error: " + e.message); 
+            }
         }
 
         // send form data back to web service

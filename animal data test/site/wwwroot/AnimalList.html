@@ -27,6 +27,7 @@
                         <th>Breed</th>
                         <th>Color</th>
                         <th>Weight</th>
+                        <th>Description</th>
                     </tr>
                 </thead>
                 <tbody id="tblBody" data-bind="foreach: items">
@@ -36,6 +37,7 @@
                         <td data-bind="text: breed"></td>
                         <td data-bind="text: color"></td>
                         <td data-bind="text: weight"></td>
+                        <td data-bind="text: notes"></td>
                     </tr>
                 </tbody>
             </table>
@@ -58,6 +60,7 @@
                 ko.applyBindings(dataModel);
             }
 
+
             // main model
             function dataModel(n) {
                 var self = this;
@@ -75,6 +78,7 @@
                 self.breed = ko.observable(rec.breed);
                 self.color = ko.observable(rec.color);
                 self.weight = ko.observable(rec.weight);
+                self.notes = ko.observable(rec.notes);
             }
 
             function getData() {

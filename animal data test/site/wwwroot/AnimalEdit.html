@@ -50,7 +50,7 @@
         </div>
         <div class="row ent">
             <span class="col-lg-1">Notes:</span>
-            <span class="col-lg-3"><textarea id="Text3" data-bind="textInput:notes"  style="width:400px;height:100px;"></textarea></span>
+            <span class="col-lg-3"><input type="text" id="Text3" data-bind="value:notes"  style="width:400px;height:100px;"></span>
         </div>
         <p/>
         <div class="row ent">
@@ -96,9 +96,11 @@
         })
 
         // call MSI web service to pull single record based on id
-        function getData() {
+        function getData() 
+        {
             var url = MSIRootAPI + "pet/" + id;
-            var jqxhr = $.get(MSIRootAPI + "pet/" + id, "", function (response) {
+            var jqxhr = $.get(MSIRootAPI + "pet/" + id, "", function (response) 
+            {
                 getDataResponse(response);
             }, "json")
             .fail(function (response) {
@@ -114,11 +116,11 @@
         function viewModel(data) {
             var self = this;
             self.petid = ko.observable();
-            self.pettype = ko.observable();
             self.petname = ko.observable();
-            self.weight = ko.observable();
+            self.pettype = ko.observable();
             self.breed = ko.observable();
             self.color = ko.observable();
+            self.weight = ko.observable();
             self.notes = ko.observable();
         }
 
