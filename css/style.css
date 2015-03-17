@@ -221,4 +221,10 @@ footer p {
   color: white;
   }
 
-	
+.picture-centered {
+  text-align: center;
+}
+
+.pic-centered {
+  padding-left: 150px;
+}	
