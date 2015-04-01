@@ -228,3 +228,7 @@ footer p {
 .pic-centered {
   padding-left: 150px;
 }	
+
+.text-centered {
+  text-align: center;
+}
