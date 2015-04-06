@@ -124,18 +124,18 @@ hr {
    padding:1em 1em 1em;
    font-size:1em;
    text-decoration:none;
-   color:#444;
+   color:black;
    font-weight:bold;
 }
 
 #centeredmenu ul li a:hover {
    background:#36f; /* Top menu items background colour */
-   color:#fff;
+   color:black;
 }
 #centeredmenu ul li:hover a,
 #centeredmenu ul li.hover a { /* This line is required for IE 6 and below */
    background:#C5BBBB; /* Top menu items background colour */
-   color:#fff;
+   color:black;
 }
 
 /* Submenu items */
@@ -165,7 +165,7 @@ hr {
 #centeredmenu ul li:hover ul li a:hover,
 #centeredmenu ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
    background:#AED9F2; /* Sub menu items background colour */
-   color:#fff;
+   color:black;
 }
 
 /* Flip the last submenu so it stays within the page */
