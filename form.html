@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--tell internet explorer give the user most up-to-date experience-->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for mobile, how to display the page initially when it loads-->
-    <link rel="shortcut icon" href="images/favicon.ico" /> <!--display favicon in title-->
+    <link rel="shortcut icon" href="images/logo.ico" /> <!--display logo icon in title-->
     <title>Sanctuary at Browning Farms</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700"> <!--link to google font-->
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--link to bootstrap style css-->
+    <link rel="stylesheet" href="css/bootstrap.css"> <!--link to bootstrap style css-->
     <link rel="stylesheet" href="css/style.css"> <!--link to personal style css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
   </head>
 
   <!--There are 3 big main boxes: top, middle, bottom-->
@@ -38,47 +40,50 @@
       </div>
 
 
-      <div class="row space-below">
-        <div id="centeredmenu">
-          <nav> <!--menu navigation links-->
-            <ul>
-              <li>
-                <a href="about.html">About Us</a>
-                <ul> <!--submenu links-->
-                  <li><a href="mission.html">Our Mission</a></li>
-                  <li><a href="social.html">Social Media</a></li>
-                </ul>
-              </li>
-    
-              <li>
-                <a href="adoption.html">Adoption</a>
-                <ul>
-                  <li><a href="form.html">Form</a></li>
-                </ul>
-              </li>
+     <nav class="navbar navbar-default">
+      <!-- Collect the nav links, forms, and other content for toggling -->
 
-              <li>
-                <a href="volunteer.html">Volunteer</a>
-              </li>
-
-              <li>
-                <a href="service.html">Our Services</a>
-              </li>
-
-              <li>
-                <a href="blog.html">Blog</a>
-              </li>
-
-
-              <li>
-                <a href="donate.html">Donate</a>
-              </li>
-
-
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About Us<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="about.html">Our Story</a></li>
+              <li class="divider"></li>
+              <li><a href="mission.html">Our Mission</a></li>
             </ul>
-          </nav>
-        </div>
-      </div>
+          </li>
+        </ul>
+
+
+
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Adoption<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="adoption.html">Animal For Adoption</a></li>
+              <li class="divider"></li>
+              <li><a href="form.html">Form</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li><a href="volunteer.html">Volunteer</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li><a href="services.html">Our Services</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav">
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+
+      </nav>
 
 
       <div class="row">
